@@ -32,32 +32,18 @@ var SampleApp = function() {
         };
     };
 
-
-    /**
-     *  Populate the cache.
-     */
-    self.populateCache = function() {
-        if (typeof self.zcache === "undefined") {
-            self.zcache = { 'index.html': '' };
-        }
-
-        //  Local cache for static content.
-        self.zcache['index.html'] = fs.readFileSync('./index.html');
-    };
-
-
     /**
      *  Retrieve entry (content) from cache.
      *  @param {string} key  Key identifying content to retrieve from cache.
      */
     self.cache_get = function(key) { return self.zcache[key]; };
 
-
     /**
      *  terminator === the termination handler
      *  Terminate server on receipt of the specified signal.
      *  @param {string} sig  Signal to terminate on.
      */
+
     self.terminator = function(sig){
         if (typeof sig === "string") {
            console.log('%s: Received %s - terminating sample app ...',
@@ -66,7 +52,6 @@ var SampleApp = function() {
         }
         console.log('%s: Node server stopped.', Date(Date.now()) );
     };
-
 
     /**
      *  Setup termination handlers (for exit and a list of signals).
@@ -82,7 +67,6 @@ var SampleApp = function() {
             process.on(element, function() { self.terminator(element); });
         });
     };
-
 
     /*  ================================================================  */
     /*  App server functions (main app logic here).                       */
@@ -105,12 +89,6 @@ var SampleApp = function() {
         };
     };
 
-    /*app.get('/gallery', function(req, res) {
-    res.render('gallery.html');
-    });*/
-
-
-
     /**
      *  Initialize the server (express) and create the routes and register
      *  the handlers.
@@ -118,7 +96,7 @@ var SampleApp = function() {
     self.initializeServer = function() {
         self.createRoutes();
         self.app = express.createServer();
-        
+
         self.app.configure(function(){
                 //self.app.use(express.cookieParser());
                 //self.app.use.(express.session({secret:"secret",key:"express.sid"}));
@@ -135,7 +113,7 @@ var SampleApp = function() {
                 self.app.set('view engine', 'ejs');
                 });
 		console.log("app configured!")
-        
+
         //  Add handlers for the app (from the routes).
         for (var r in self.routes) {
             self.app.get(r, self.routes[r]);
@@ -148,13 +126,11 @@ var SampleApp = function() {
      */
     self.initialize = function() {
         self.setupVariables();
-        self.populateCache();
         self.setupTerminationHandlers();
 
         // Create the express server and routes.
         self.initializeServer();
     };
-
 
     /**
      *  Start the server (starts up the sample application).
@@ -175,4 +151,3 @@ var SampleApp = function() {
 var zapp = new SampleApp();
 zapp.initialize();
 zapp.start();
-
