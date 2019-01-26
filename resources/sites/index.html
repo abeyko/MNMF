@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="index.css" rel="stylesheet" type="text/css">
+    <script src="index.js" type="text/javascript"></script>
+
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -16,21 +18,22 @@
 </head>
 
 <body>
-    <div id="home-page">
-        <br/>
-        <br/>
-        <div id="menu-bar">
-            <div id="right-children">
-                <div class="menu-button">
-                    <a href="example.html"><p>Example Link</p></a>
-                </div>
-            </div>
-        </div>
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2&appId=229935821286185&autoLogAppEvents=1';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
 
-        <div>
-            Hello World! This will be Making Friends in Minnesota!
-        </div>
-
+    <div id="signin">
+        <div class="fb-login-button" data-size="medium" data-button-type="login_with" data-auto-logout-link="true" data-use-continue-as="true"></div>
     </div>
+
+    <div>Hello world</div>
+
 </body>
 </html>
