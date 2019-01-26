@@ -11,8 +11,7 @@
       testAPI();
     } else {
       // The person is not logged into your app or we are unable to tell.
-      document.getElementById('status').innerHTML = 'Please log ' +
-        'into this app.';
+
     }
   }
 
@@ -20,7 +19,9 @@
   // Button.  See the onlogin handler attached to it in the sample
   // code below.
   function checkLoginState() {
+      console.log('clicked the login button');
     FB.getLoginStatus(function(response) {
+        console.log('about to call statusChangeCallback');
       statusChangeCallback(response);
     });
   }
@@ -69,5 +70,5 @@
       console.log('Successful login for: ' + response.name);
 
     });
-    // document.location = "profile.html";
+    document.location = "profile.html";
 }
