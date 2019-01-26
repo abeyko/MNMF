@@ -31,11 +31,7 @@ var SampleApp = function() {
             self.ipaddress = "127.0.0.1";
         };
     };
-
-<<<<<<< HEAD
-
-=======
->>>>>>> master
+    
     /**
      *  Retrieve entry (content) from cache.
      *  @param {string} key  Key identifying content to retrieve from cache.
