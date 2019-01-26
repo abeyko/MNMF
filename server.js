@@ -32,19 +32,22 @@ var SampleApp = function() {
         };
     };
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
     /**
      *  Retrieve entry (content) from cache.
      *  @param {string} key  Key identifying content to retrieve from cache.
      */
     self.cache_get = function(key) { return self.zcache[key]; };
 
-
     /**
      *  terminator === the termination handler
      *  Terminate server on receipt of the specified signal.
      *  @param {string} sig  Signal to terminate on.
      */
+
     self.terminator = function(sig){
         if (typeof sig === "string") {
            console.log('%s: Received %s - terminating sample app ...',
@@ -53,7 +56,6 @@ var SampleApp = function() {
         }
         console.log('%s: Node server stopped.', Date(Date.now()) );
     };
-
 
     /**
      *  Setup termination handlers (for exit and a list of signals).
@@ -69,7 +71,6 @@ var SampleApp = function() {
             process.on(element, function() { self.terminator(element); });
         });
     };
-
 
     /*  ================================================================  */
     /*  App server functions (main app logic here).                       */
@@ -91,12 +92,6 @@ var SampleApp = function() {
             res.send(self.cache_get('index.html') );
         };
     };
-
-    /*app.get('/gallery', function(req, res) {
-    res.render('gallery.html');
-    });*/
-
-
 
     /**
      *  Initialize the server (express) and create the routes and register
@@ -140,7 +135,6 @@ var SampleApp = function() {
         // Create the express server and routes.
         self.initializeServer();
     };
-
 
     /**
      *  Start the server (starts up the sample application).
