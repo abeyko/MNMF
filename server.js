@@ -34,19 +34,6 @@ var SampleApp = function() {
 
 
     /**
-     *  Populate the cache.
-     */
-    self.populateCache = function() {
-        if (typeof self.zcache === "undefined") {
-            self.zcache = { 'index.html': '' };
-        }
-
-        //  Local cache for static content.
-        self.zcache['index.html'] = fs.readFileSync('./index.html');
-    };
-
-
-    /**
      *  Retrieve entry (content) from cache.
      *  @param {string} key  Key identifying content to retrieve from cache.
      */
@@ -118,7 +105,7 @@ var SampleApp = function() {
     self.initializeServer = function() {
         self.createRoutes();
         self.app = express.createServer();
-        
+
         self.app.configure(function(){
                 //self.app.use(express.cookieParser());
                 //self.app.use.(express.session({secret:"secret",key:"express.sid"}));
@@ -135,7 +122,7 @@ var SampleApp = function() {
                 self.app.set('view engine', 'ejs');
                 });
 		console.log("app configured!")
-        
+
         //  Add handlers for the app (from the routes).
         for (var r in self.routes) {
             self.app.get(r, self.routes[r]);
@@ -148,7 +135,6 @@ var SampleApp = function() {
      */
     self.initialize = function() {
         self.setupVariables();
-        self.populateCache();
         self.setupTerminationHandlers();
 
         // Create the express server and routes.
@@ -175,4 +161,3 @@ var SampleApp = function() {
 var zapp = new SampleApp();
 zapp.initialize();
 zapp.start();
-
