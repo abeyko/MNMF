@@ -1,16 +1,24 @@
-.fa-home {
-    color: #19B3B1;
-    padding-right: 0.5em;
-  }
-  .home {
-    float: right;
-    margin-right: 2em;
-    font-size: 1.5em;
-    color: #fff;
-    margin-top: 0.5em;
-  }
-  .home:hover {
-    color: gray;
-    outline: none;
-    text-decoration: none;
-  }
+body {
+  margin: 0;
+}
+
+
+.links {
+  color: #fff;
+  float: right;
+  margin-top: 2.5em;
+  margin-right: 1em;
+  cursor: pointer;
+  font-size: 150%;
+}
+
+.tiffany-blue-container {
+  background: #19B3B1;
+  height: 100px;
+  width: 100vw;
+}
+
+.fb-login {
+  display: flex;
+  justify-content: flex-end;
+}

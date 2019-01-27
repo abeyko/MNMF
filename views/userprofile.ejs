@@ -20,15 +20,20 @@
                 }(document, 'script', 'facebook-jssdk'));
               </script>
 
-              <div id="fb-root"></div>
-
-              <div class="tiffany-blue-container"></div>
-              <div class="deep-teal-container">
-                  <a href="/" class="home"><i class="fas fa-home fa-2x"></i>HOME</a>
+              <div class="tiffany-blue-container">
+                    <div class="links">
+                        <span class="home" onclick="window.location.href='/'">Home</span> / 
+                        <span class="profile" onclick="window.location.href='/userprofile'">Profile</span></div>
               </div>
 
-              <div class="fb-login-button" data-size="medium" data-button-type="continue_with" data-auto-logout-link="true"
-                data-use-continue-as="true"></div>
+              <div class="deep-teal-container">
+              </div>
+
+              <div class="fb-login">
+                    <div id="fb-root"></div>
+                    <div class="fb-login-button" data-size="medium" data-button-type="login_with" data-auto-logout-link="true" data-use-continue-as="true"></div>
+                </div>
+              
     <br><br><br><br>
     <table style="width:50%" align="center">
         <tr>
