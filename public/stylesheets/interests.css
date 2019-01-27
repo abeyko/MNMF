@@ -55,17 +55,13 @@ form {
   border-radius: 10px;
 }
 
-#fb-root {
-  background-color: #e3a6a1;
-  align-content: right;
-}
-
-.fb-login-button {
-  background-color:  #e3a6a1;
-  align-content: right;
-}
 
 .header-h1 {
   margin-left: 65px;
 }
 
+.fb-login {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #e3a6a1;
+}
