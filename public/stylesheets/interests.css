@@ -6,22 +6,11 @@
   margin: 0;
   padding: 0;
   width: auto;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  background-color: #e3a6a1;
-}
-
-
-.wrapper {
-  width: 630px;
-  text-align: center;
-  grid-column: 4 / 10;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  background-color: #e3a6a1;
 }
 
 
