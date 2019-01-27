@@ -8,6 +8,43 @@ body {
   background: #034B61;
 }
 
+.tiffany-blue-container {
+  background: #19B3B1;
+  height: 100px;
+  width: 100vw;
+}
+
+.fb-login {
+  display: flex;
+  justify-content: flex-end;
+}
+/*
+.edit-icon {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+  color: white;
+  font-size: 110%;
+} */
+
+.user-profile {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+  color: white;
+  font-size: 110%;
+}
+
+.user-image:hover {
+  cursor:pointer;
+}
+
 .main-container {
   display: flex;
   justify-content: center;
