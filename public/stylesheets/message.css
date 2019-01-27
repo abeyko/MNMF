@@ -1,24 +1,31 @@
 body {
     background-color: #034B61;
+    margin: 0;
 }
 
-.deep-teal-container {
-  background: #034B61;
-  height: 75px;
-  width: 100vw;
+.links {
+    color: #fff;
+    float: right;
+    margin-top: 2.5em;
+    margin-right: 1em;
+    cursor: pointer;
+    font-size: 150%;
 }
+
+
+.fb-login {
+    display: flex;
+    justify-content: flex-end;
+  }
 
 .tiffany-blue-container {
-  background: #19B3B1;
-  height: 100px;
-  width: 100vw;
-} 
+    background: #19B3B1;
+    height: 100px;
+    width: 100vw;
+ }
+
 
 .top-box {
-  margin: 0;
-  padding: 0;
-  width: auto;
-  height: 100vh;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   background-color: #034B61;

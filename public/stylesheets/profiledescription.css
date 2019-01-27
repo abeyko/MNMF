@@ -10,6 +10,24 @@
   align-items: center;
 }
 
+body {
+  background-color:#E3A6A1 !important;
+}
+.fb-login {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.links {
+  color: #fff;
+  float: right;
+  margin-top: 2.5em;
+  margin-right: 1em;
+  cursor: pointer;
+  font-size: 150%;
+}
+
+
 .deep-teal-container {
   background: #034B61;
   height: 75px;
@@ -29,6 +47,8 @@ ul li {
 .wrapper {
   width: 500px;
   text-align: center;
+  margin: 0;
+  border-radius: 20px;
 }
 .img-box {
   /* border-radius: 70%; */
@@ -48,7 +68,6 @@ ul li {
 
 .box {
   padding: 0;
-  margin-top: 3em;
   box-align: center;
   display: flex;
   flex-direction: column;
@@ -59,7 +78,6 @@ ul li {
   border: 0.5px solid #c1c1c1;
   border-radius: 20px;
   box-shadow: 6px 6px 8px -5px gray;
-  margin-bottom: 2em;
 }
 
 .description {
@@ -111,25 +129,11 @@ ul li {
   padding-right: 1em;
 }
 
-.fa-home {
-  color: #19B3B1;
-  padding-right: 0.5em;
-}
-.home {
-  float: right;
-  margin-right: 2em;
-  font-size: 1.5em;
-  color: #fff;
-  margin-top: 0.5em;
-}
-.home:hover {
-  color: gray;
-  outline: none;
-  text-decoration: none;
-}
 
 .icon-message {
   margin-top: -9%;
   margin-left: 70%;
   cursor: pointer;
 }
+
+
