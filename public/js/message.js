@@ -3,7 +3,7 @@ var addMessage = function(){
     var new_text = $("#new_message");
 
     //"add" it as a sent message
-    $("#new_display_msg_text").text(new_text.val());
+    $("#new_chat_text").text(new_text.val());
     $("#new_display_msg").show();
 
     //clear the textarea

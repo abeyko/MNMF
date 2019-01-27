@@ -72,9 +72,5 @@
 
     });
 
-    //TODO: query if we know who this user is or not
-    //if we do...
-    // document.location = "matches";
-    //if we don't...
-    // document.location = "profile";
+    document.location = "interests";
 }

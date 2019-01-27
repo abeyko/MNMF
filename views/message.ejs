@@ -21,56 +21,70 @@
           <div id="fb-root"></div>
           <div class="fb-login-button" data-size="medium" data-button-type="continue_with" data-auto-logout-link="true" data-use-continue-as="true"></div>
           <div class="header-h1">
-            <h1><img class="profile_img_main" src="http://res.freestockphotos.biz/pictures/10/10678-illustration-of-a-female-user-icon-pv.png"></img> Marilyn Monroe</h1>
+            <h1><img class="profile_img_main" src="/images/marilyn_monroe.jpg"></img> Marilyn Monroe</h1>
           </div>
           <div class="message_box">
               <table class="chat_table">
                   <tr>
                       <td class="chat user_chat">
-                          <img class="profile_img u_img" src="http://res.freestockphotos.biz/pictures/10/10678-illustration-of-a-female-user-icon-pv.png"></img>
-                          Mauris eget pellentesque elit. Pellentesque quis dictum arcu. Praesent fermentum convallis neque.
+                          <img class="profile_img u_img" src="/images/marilyn_monroe.jpg"></img>
+                          <div class="chat_text">
+                              Hey, I see you like music too, do you go to concerts very often?
+                          </div>
                       </td>
                   </tr>
                   <tr>
                       <td class="chat my_chat">
-                          <img class="profile_img m_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-pW_R4dOkNqHWUb-4xbilXGBef03cx46Y4o11RW3ZniV5V1bt"></img>
-                          Vestibulum condimentum eleifend tempor. Donec id nunc a urna fringilla porta.
+                          <img class="profile_img m_img" src="/images/CrystaCropped.jpg"></img>
+                          <div class="chat_text">
+                              Yes! Vieux Carré is basically my second home lol
+                          </div>
                       </td>
                   </tr>
                   <tr>
                       <td class="chat user_chat">
-                          <img class="profile_img u_img" src="http://res.freestockphotos.biz/pictures/10/10678-illustration-of-a-female-user-icon-pv.png"></img>
-                          Mauris eget pellentesque elit. Pellentesque quis dictum arcu. Praesent fermentum convallis neque.
+                          <img class="profile_img u_img" src="/images/marilyn_monroe.jpg"></img>
+                          <div class="chat_text">
+                              Ha, I don't go as often as I'd like. No fun alone, ya know?
+                          </div>
                       </td>
                   </tr>
                   <tr>
                       <td class="chat my_chat">
-                          <img class="profile_img m_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-pW_R4dOkNqHWUb-4xbilXGBef03cx46Y4o11RW3ZniV5V1bt"></img>
-                          Vestibulum condimentum eleifend tempor. Donec id nunc a urna fringilla porta.
+                          <img class="profile_img m_img" src="/images/CrystaCropped.jpg"></img>
+                          <div class="chat_text">
+                              I hear you. Davina and the Vagabonds are playing there later this week. Want to go check it out with me?
+                          </div>
                       </td>
                   </tr>
                   <tr>
                       <td class="chat user_chat">
-                          <img class="profile_img u_img" src="http://res.freestockphotos.biz/pictures/10/10678-illustration-of-a-female-user-icon-pv.png"></img>
-                          Curabitur rhoncus enim mi, a ultricies tellus auctor in. Vivamus pretium dui purus. Phasellus sit amet maximus purus. Sed dapibus metus felis, nec laoreet enim pretium mollis.
+                          <img class="profile_img u_img" src="/images/marilyn_monroe.jpg"></img>
+                          <div class="chat_text">
+                              That sounds fun, when is she playing?
+                          </div>
                       </td>
                   </tr>
                   <tr>
                       <td class="chat my_chat">
-                          <img class="profile_img m_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-pW_R4dOkNqHWUb-4xbilXGBef03cx46Y4o11RW3ZniV5V1bt"></img>
-                          Vestibulum condimentum eleifend tempor. Donec id nunc a urna fringilla porta.
+                          <img class="profile_img m_img" src="/images/CrystaCropped.jpg"></img>
+                          <div class="chat_text">
+                              Thursday at 8pm.
+                          </div>
                       </td>
                   </tr>
                   <tr>
                       <td class="chat user_chat">
-                          <img class="profile_img u_img" src="http://res.freestockphotos.biz/pictures/10/10678-illustration-of-a-female-user-icon-pv.png"></img>
-                          Mauris eget pellentesque elit. Pellentesque quis dictum arcu. Praesent fermentum convallis neque.
+                          <img class="profile_img u_img" src="/images/marilyn_monroe.jpg"></img>
+                          <div class="chat_text">
+                              Perfect. Can't wait!
+                          </div>
                       </td>
                   </tr>
                   <tr>
                       <td class="chat my_chat" id="new_display_msg" style="display:none;">
-                          <img class="profile_img m_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-pW_R4dOkNqHWUb-4xbilXGBef03cx46Y4o11RW3ZniV5V1bt"></img>
-                          <div id="new_display_msg_text"></div>
+                          <img class="profile_img m_img" src="/images/CrystaCropped.jpg"></img>
+                          <div id="new_chat_text"></div>
                       </td>
                   </tr>
               </table>
@@ -79,7 +93,10 @@
                       <textarea id="new_message" name="new_message" rows="8" cols="80"></textarea>
                   </div>
                   <div>
-                      <button type="button" class="btn" onclick="addMessage()">Send</button>
+                      <button type="button" class="report_btn">Report</button>
+                  </div>
+                  <div>
+                      <button type="button" class="send_btn" onclick="addMessage()">Send</button>
                   </div>
               </div>
           </div>

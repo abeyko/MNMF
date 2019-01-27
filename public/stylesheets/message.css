@@ -41,18 +41,24 @@ body {
 .chat {
     padding:5px 10px;
     height: auto;
-    width: 350px;
     border-radius: 25px;
     color: white;
+    max-width: 300px;
+}
+
+.chat_text {
+    text-align: left;
 }
 
 .chat.user_chat {
     float:left;
+    /* text-align: left; */
     background-color: #19B3B1;
 }
 
 .chat.my_chat {
     float: right;
+    /* text-align: right; */
     background-color: gray;
 }
 
@@ -74,13 +80,23 @@ body {
 
 .profile_img.u_img {
     float:left;
+    padding: 1px 10px 1px 5px;
 }
 
 .profile_img.m_img {
     float: right;
+    padding: 1px 5px 1px 10px;
 }
 
-.btn {
+.report_btn {
+    background-color: #BC5F6A;
+    color: white;
+    border-radius: 10px;
+    float:left;
+    font-size:18px;
+}
+
+.send_btn {
     background-color: #19B3B1;
     color: white;
     border-radius: 10px;
