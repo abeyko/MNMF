@@ -18,9 +18,12 @@ router.get('/interests', function(req, res, next) {
     res.render('interests', { title: 'Interests' });
 });
 
+router.get('/message', function(req, res, next) {
+    res.render('message', {title: 'Messaging'});
+});
+
 router.get('/userprofile', function(req, res, next){
     res.render('userprofile', { title: 'User Profile' });
 });
   
-
 module.exports = router;
