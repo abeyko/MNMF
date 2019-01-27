@@ -13,6 +13,7 @@
 .top-box {
   margin: 0;
   padding: 0;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
