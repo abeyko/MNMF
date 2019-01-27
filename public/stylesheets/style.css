@@ -1,8 +1,66 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+html, body {
+ height:100vh;
+ padding:0;
+ margin:0;
 }
 
-a {
-  color: #00B7FF;
+.tiffany-blue-container {
+  background: #19B3B1;
+  height: 100px;
+  width: 100vw;
+}
+
+.blush-container {
+  background: #E3A6A1;
+  height: 15px;
+  width: 100vw;
+}
+
+.main-container {
+  height: 600px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.berry-container {
+  background: #BC5F6A;
+  height: 40px;
+  width: 100vw;
+}
+
+.deep-teal-container {
+  background: #034B61;
+  height: 75px;
+  width: 100vw;
+}
+
+.title {
+  font-size: 500%;
+  margin: 2%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.info-container {
+  padding-left: 5%;
+  width: 400px;
+}
+
+.subtitle {
+  font-family: 'Raleway', sans-serif;
+  font-size: 150%;
+  font-weight: bold;
+}
+
+.description {
+  font-family: 'Raleway', sans-serif;
+  font-size: 130%;
+  margin: 2%;
+  padding-bottom: 4%;
+}
+
+.fb-login {
+  display: flex;
+  justify-content: flex-end;
 }

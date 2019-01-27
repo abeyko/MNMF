@@ -3,9 +3,48 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Raleway" rel="stylesheet">
+    <script src="/js/signin.js" type="text/javascript"></script>
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <script>
+          (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2&appId=229935821286185&autoLogAppEvents=1';
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+      </script>
+
+    <div class="tiffany-blue-container"></div>
+    <div class="deep-teal-container"></div>
+
+    <div class="fb-login">
+      <div id="fb-root"></div>
+      <div class="fb-login-button" data-size="medium" data-button-type="login_with" data-auto-logout-link="true" data-use-continue-as="true"></div>
+    </div>
+
+    <div class="title">Make Friends Minnesota</div>
+    <div class="main-container">
+      <img clas="logo" src="/images/mfmn_logo.png" alt="Make Friends Minnesota Logo" height="500" width="450">
+      <div class="info-container">
+        <div class="subtitle">About</div>
+        <div class="description">The main focus of Make Friends Minnesota is to connect people around Minnesota with common interests.</div>
+        <div class="subtitle">Team</div>
+        <div class="description">
+          <ul>
+            <li><strong>Angeliki Beyko</strong> <span style="color:gray;font-size:80%"> - Frontend / Idea</span></li>
+            <li><strong>Crysta McKenney</strong> <span style="color:gray;font-size:80%"> - Full Stack</span></li>
+            <li><strong>Amie Thao</strong> <span style="color:gray;font-size:80%"> - Frontend / Design</span></li>
+            <li><strong>Victoria Chhieng</strong> <span style="color:gray;font-size:80%"> - Frontend</span></li>
+            <li><strong>Molly Wier</strong> <span style="color:gray;font-size:80%"> - Frontend / Branding</span></li>
+            <li><strong>Kim Wier</strong> <span style="color:gray;font-size:80%"> - Design / Writing</span></li>
+            <li><strong>Shruthi Ajay</strong> <span style="color:gray;font-size:80%"> - Database</span></li>
+            <li><strong>Isha Murugkar</strong> <span style="color:gray;font-size:80%"> - Database</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

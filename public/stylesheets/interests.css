@@ -1,0 +1,71 @@
+.deep-teal-container {
+  background: #034B61;
+  height: 75px;
+  width: 100vw;
+}
+
+.tiffany-blue-container {
+  background: #19B3B1;
+  height: 100px;
+  width: 100vw;
+} 
+
+.top-box {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e3a6a1;
+  height: 80vh;
+}
+
+body {
+  background-color: #e3a6a1;
+}
+
+.box {
+  background-color: #034b61;
+  width: 400px;
+  padding: 1em;
+  border-radius: 2em;
+  box-shadow: 12px 12px 11px -5px #b7827e;
+}
+
+input.checkbox-interest {
+  width: 30px;
+  height: 30px; 
+  
+}
+form {
+  font-size: 1.3em;
+  text-align: left;
+  margin-left: 3em;
+  color: #fff;
+}
+
+.submit {
+  margin-top: 1em;
+  background-color: transparent;
+  color: gray;
+  padding: 0 1em;
+  width: 100px;
+  border-radius: 10px;
+}
+
+#fb-root {
+  background-color: #e3a6a1;
+  align-content: right;
+}
+
+.fb-login-button {
+  background-color:  #e3a6a1;
+  align-content: right;
+}
+
+.header-h1 {
+  margin-left: 65px;
+}
+
