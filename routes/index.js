@@ -16,7 +16,10 @@ router.get('/matches', function(req, res, next) {
 
 router.get('/interests', function(req, res, next) {
     res.render('interests', { title: 'Interests' });
-  });
-  
+});
+
+router.get('/message', function(req, res, next) {
+    res.render('message', {title: 'Messaging'});
+});
 
 module.exports = router;
