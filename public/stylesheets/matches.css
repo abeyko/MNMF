@@ -49,11 +49,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 1600px;
+  height: 1800px;
 }
 
 .matches-container {
-  width: 65%;
+  width: 50%;
   color: white;
   background-color:rgba(25, 179, 177,0.5);
 }
