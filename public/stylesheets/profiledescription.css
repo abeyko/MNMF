@@ -2,10 +2,12 @@
   width: auto;
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  font-family: 'Raleway', sans-serif;
-  /* font-family: 'Montserrat', sans-serif; */
+  /* display: grid;
+  grid-template-columns: repeat(12, 1fr) */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .deep-teal-container {
@@ -27,28 +29,22 @@ ul li {
 .wrapper {
   width: 500px;
   text-align: center;
-  grid-column: 5 / 10;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
 }
 .img-box {
   /* border-radius: 70%; */
   width: 100%;
   height: 360px;
-  background: url(https://bittaxer.com/wp-content/uploads/2018/03/danielle-profile-bittaxer.jpg) no-repeat center;
+  background: url(/images/marilyn_monroe.jpg) no-repeat center;
   background-size: cover;
   border-radius: 20px 20px 0 0;
 }
 
-/* 
-p {
-  display: inline-block;
-  padding-left: 1em;
-  padding-top: 1em;
-} */
+.name {
+  color: #034B61;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1em;
+}
+
 
 .box {
   padding: 0;
@@ -68,7 +64,11 @@ p {
 
 .description {
   padding: 1em;
-  font-size: 1.5em;
+  font-size: 1.3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 
@@ -99,8 +99,11 @@ p {
 
 .h3-box {
   letter-spacing: 3px;
-  width: 100%;
+  width: auto;
   border-bottom: 1px solid #bcbaba;
+  text-align: left;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
 }
 
 .fa-map-marked-alt, .fa-palette, .fa-apple-alt, .fa-code, .fa-envelope {
