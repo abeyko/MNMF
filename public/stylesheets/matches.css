@@ -1,0 +1,79 @@
+html, body {
+ height:100vh;
+ padding:0;
+ margin:0;
+}
+
+body {
+  background: #034B61;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1600px;
+}
+
+.matches-container {
+  width: 65%;
+  color: white;
+  background-color:rgba(25, 179, 177,0.5);
+}
+
+.matches-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.matches-title {
+  /* border: 1px solid white; */
+  font-family: 'Raleway', sans-serif;
+  font-size: 200%;
+  margin: 2%;
+}
+
+.user-image {
+  margin: 5%;
+  background: orange;
+  height: 100px;
+  width: 100px;
+  border-radius: 25%;
+}
+
+.row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 6%;
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+}
+
+.left-container {
+  margin-left: 2%;
+}
+
+.meter {
+  margin-left: 2%;
+}
+
+.user-name, .user-subtitle {
+  font-family: 'Raleway', sans-serif;
+  font-size: 120%;
+}
+
+.matching-interests {
+  font-family: 'Raleway', sans-serif;
+  color: #a3bab9;
+  font-size: 100%;
+}
+
+.row {
+  /* border-bottom: 1px solid white; */
+}
