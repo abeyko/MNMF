@@ -60,11 +60,7 @@ html, body {
   padding-bottom: 4%;
 }
 
-/* body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.fb-login {
+  display: flex;
+  justify-content: flex-end;
 }
-
-a {
-  color: #00B7FF;
-} */
