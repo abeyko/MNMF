@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/message.css' />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/message.js" type="text/javascript"></script>
+  </head>
+  <body>
+      <!-- fb button -->
+      <script>
+          (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2&appId=229935821286185&autoLogAppEvents=1';
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+      </script>
+      <div class="top-box">
+          <div id="fb-root"></div>
+          <div class="fb-login-button" data-size="medium" data-button-type="continue_with" data-auto-logout-link="true" data-use-continue-as="true"></div>
+          <div class="header-h1">
+            <h1><img class="profile_img_main" src="http://res.freestockphotos.biz/pictures/10/10678-illustration-of-a-female-user-icon-pv.png"></img> Marilyn Monroe</h1>
+          </div>
+          <div class="message_box">
+              <table class="chat_table">
+                  <tr>
+                      <td class="chat user_chat">
+                          <img class="profile_img u_img" src="http://res.freestockphotos.biz/pictures/10/10678-illustration-of-a-female-user-icon-pv.png"></img>
+                          Mauris eget pellentesque elit. Pellentesque quis dictum arcu. Praesent fermentum convallis neque.
+                      </td>
+                  </tr>
+                  <tr>
+                      <td class="chat my_chat">
+                          <img class="profile_img m_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-pW_R4dOkNqHWUb-4xbilXGBef03cx46Y4o11RW3ZniV5V1bt"></img>
+                          Vestibulum condimentum eleifend tempor. Donec id nunc a urna fringilla porta.
+                      </td>
+                  </tr>
+                  <tr>
+                      <td class="chat user_chat">
+                          <img class="profile_img u_img" src="http://res.freestockphotos.biz/pictures/10/10678-illustration-of-a-female-user-icon-pv.png"></img>
+                          Mauris eget pellentesque elit. Pellentesque quis dictum arcu. Praesent fermentum convallis neque.
+                      </td>
+                  </tr>
+                  <tr>
+                      <td class="chat my_chat">
+                          <img class="profile_img m_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-pW_R4dOkNqHWUb-4xbilXGBef03cx46Y4o11RW3ZniV5V1bt"></img>
+                          Vestibulum condimentum eleifend tempor. Donec id nunc a urna fringilla porta.
+                      </td>
+                  </tr>
+                  <tr>
+                      <td class="chat user_chat">
+                          <img class="profile_img u_img" src="http://res.freestockphotos.biz/pictures/10/10678-illustration-of-a-female-user-icon-pv.png"></img>
+                          Curabitur rhoncus enim mi, a ultricies tellus auctor in. Vivamus pretium dui purus. Phasellus sit amet maximus purus. Sed dapibus metus felis, nec laoreet enim pretium mollis.
+                      </td>
+                  </tr>
+                  <tr>
+                      <td class="chat my_chat">
+                          <img class="profile_img m_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-pW_R4dOkNqHWUb-4xbilXGBef03cx46Y4o11RW3ZniV5V1bt"></img>
+                          Vestibulum condimentum eleifend tempor. Donec id nunc a urna fringilla porta.
+                      </td>
+                  </tr>
+                  <tr>
+                      <td class="chat user_chat">
+                          <img class="profile_img u_img" src="http://res.freestockphotos.biz/pictures/10/10678-illustration-of-a-female-user-icon-pv.png"></img>
+                          Mauris eget pellentesque elit. Pellentesque quis dictum arcu. Praesent fermentum convallis neque.
+                      </td>
+                  </tr>
+                  <tr>
+                      <td class="chat my_chat" id="new_display_msg" style="display:none;">
+                          <img class="profile_img m_img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-pW_R4dOkNqHWUb-4xbilXGBef03cx46Y4o11RW3ZniV5V1bt"></img>
+                          <div id="new_display_msg_text"></div>
+                      </td>
+                  </tr>
+              </table>
+              <div>
+                  <div>
+                      <textarea id="new_message" name="new_message" rows="8" cols="80"></textarea>
+                  </div>
+                  <div>
+                      <button type="button" class="btn" onclick="addMessage()">Send</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </body>
+</html>
