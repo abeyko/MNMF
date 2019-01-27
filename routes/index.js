@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'MFMN' });
 });
 
 router.get('/profile', function(req, res, next) {
@@ -22,4 +22,8 @@ router.get('/message', function(req, res, next) {
     res.render('message', {title: 'Messaging'});
 });
 
+router.get('/userprofile', function(req, res, next){
+    res.render('userprofile', { title: 'User Profile' });
+});
+  
 module.exports = router;
