@@ -42,12 +42,27 @@ html, body {
   font-family: 'Montserrat', sans-serif;
 }
 
-.bolder {
-  font-weight: bolder;
+.info-container {
+  padding-left: 5%;
+  width: 400px;
 }
 
-.info-container {
-  
+.subtitle {
+  font-family: 'Raleway', sans-serif;
+  font-size: 150%;
+  font-weight: bold;
+}
+
+.description {
+  font-family: 'Raleway', sans-serif;
+  font-size: 130%;
+  margin: 2%;
+  padding-bottom: 4%;
+}
+
+.fb-login {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* body {

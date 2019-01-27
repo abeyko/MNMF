@@ -17,6 +17,6 @@ router.get('/matches', function(req, res, next) {
 router.get('/interests', function(req, res, next) {
     res.render('interests', { title: 'Interests' });
   });
-  
+
 
 module.exports = router;
