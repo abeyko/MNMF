@@ -1,0 +1,49 @@
+body {
+    background-color: #034B61;
+}
+
+.message_box {
+
+}
+
+.chat {
+    padding:5px 10px;
+    height: auto;
+    width: 300px;
+    border-radius: 25px;
+    color: white;
+}
+
+.chat.user_chat {
+    float:left;
+    background-color: #19B3B1;
+}
+
+.chat.my_chat {
+    float: right;
+    background-color: gray;
+}
+
+.profile_img {
+    height: 25px;
+    width: 25px;
+    border-radius:50px;
+    position:relative;
+    top:0;
+}
+
+.profile_img.u_img {
+    float:left;
+}
+
+.profile_img.m_img {
+    float: right;
+}
+
+.btn {
+    background-color: #19B3B1;
+    color: white;
+    border-radius: 10px;
+    float:right;
+    font-size:25px;
+}
