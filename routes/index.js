@@ -16,7 +16,11 @@ router.get('/matches', function(req, res, next) {
 
 router.get('/interests', function(req, res, next) {
     res.render('interests', { title: 'Interests' });
-  });
+});
+
+router.get('/userprofile', function(req, res, next){
+    res.render('userprofile', { title: 'User Profile' });
+});
   
 
 module.exports = router;
